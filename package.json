@@ -1,0 +1,25 @@
+{
+  "name": "typescript-sample",
+  "version": "1.0.0",
+  "description": "sample repo typescript setup",
+  "main": "build/index.js",
+  "repository": "https://github.com/noateden/typescript-sample",
+  "author": "eden",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./build && tsc",
+    "test": "vitest",
+    "pretty": "biome format --write .",
+    "start": "node build/index.js"
+  },
+  "packageManager": "yarn@4.1.0",
+  "dependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^20.11.16",
+    "@types/yargs": "^17.0.32",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2",
+    "yargs": "^17.7.2"
+  }
+}
